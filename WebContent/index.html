@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="index.js"></script>
+<link rel="stylesheet"
+	href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">	
+
+</head>
+
+
+
+<style type="text/css">
+
+header *{
+	display: inline;	
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<body onload="init();">
+
+
+	<header>
+		<div class="nav">
+			<ul class="pull-right">
+				<li><button type="button" onClick="go_store();">商家</button>
+				<li style="margin-right: 10px"><button type="button"
+						onClick="go_shopping_cart();">購物車</button>
+			</ul>
+		</div>
+	</header>
+
+	<hr>
+
+	<div id="content">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div id="content" class="col-md-4">
+				<h1>輕鬆點</h1>
+				<h1>Easy Order System</h1>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+</body>
+
+<!-- 
+<body>
+	<H1>這是一個測試頁</H1>
+
+    
+	<table>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">測試自動登入頁:</td>       
+      </tr>
+      <tr>
+        <td><a onClick="send();">登入頁</a></td>
+      </tr>
+    </table>
+
+	<div id="content">yyyyyyyy</div>
+</body>
+
+ -->
+
+</html>
