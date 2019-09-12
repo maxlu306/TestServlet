@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>tp_tea menu</title>
+<link rel="stylesheet"
+	href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+<style>
+</style>
+</head>
+
+<script type="text/javascript">
+
+</script>
+
+
+<body>
+	<h1> tp_tea Menu!</h1>
+
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<button type="button" onClick="sweetness_level(this);" value="49"
+				name="冬瓜拿鐵"    >冬瓜拿鐵                             49</button> <br>
+			<button type="button" onClick="sweetness_level(this);" value="50"
+				name="抹茶拿鐵"    >抹茶拿鐵                             50</button> <br>
+			<button type="button" onClick="sweetness_level(this);" value="55"
+				name="抹茶紅豆拿鐵">抹茶紅豆拿鐵                       55</button> <br>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+
+	<!--==================== modal box use =========================== -->
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div id="tea_type">tea type</div>
+			
+			<div id=ices><!-- 溫度 -->
+				<form>
+					請選擇溫度<br>
+					<input type="radio" name="ice" value="多冰">多冰<br>
+					<input type="radio" name="ice" value="正常冰" checked>正常冰<br>
+					<input type="radio" name="ice" value="少冰">少冰<br>
+					<input type="radio" name="ice" value="微冰">微冰<br>
+					<input type="radio" name="ice" value="去冰">去冰<br>
+					<input type="radio" name="ice" value="完全去冰">完全去冰<br>
+				</form>
+			</div>
+			
+			<div><!-- 甜度 -->
+				<form id="sugar_form" name="sugar_form">
+					請選擇甜度<br> 					
+					<input type="radio" name="sugar" value="多糖">多糖<br>
+					<input type="radio" name="sugar" value="正常糖" checked>正常糖<br>
+					<input type="radio" name="sugar" value="70%">少糖<br>
+					<input type="radio" name="sugar" value="少糖">半糖<br>
+					<input type="radio" name="sugar" value="微糖">微糖<br>
+					<input type="radio" name="sugar" value="無糖">無糖<br>
+				</form>
+			</div>
+			<hr>
+			
+			<div><!-- 金額 -->				
+				<h2>
+					金額 : <span id="money">0</span>元
+				</h2>
+				<div>
+
+					<input type="number" id="total" min="1" max="200" value="1"
+						onchange=total_change(this);><br>
+					<button type="button" onClick="add2cart();">加入購物車</button>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
